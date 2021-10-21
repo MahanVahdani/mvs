@@ -20,6 +20,7 @@
 
 html {
   font-size: 62.5%;
+  margin: 2rem;
 }
 
 body {
@@ -199,30 +200,33 @@ a {
   color: white;
   font-size: 1.8rem;
   padding-inline: 14rem;
+  transition: background-color 0.15s;
   /* padding-block: 2.2rem; */
 }
 .button--accent:hover,
 .button--accent:focus,
 .button--search:hover,
 .button--search:focus {
-  background: #ff592f;
+  background-color: #ee3101;
 }
 .button--secondary {
   background: var(--color-secondary);
   color: white;
   font-size: 1.8rem;
   padding-inline: 9rem;
+  transition: background-color 0.15s;
   /* padding-block: 2.5rem; */
 }
 .button--secondary:hover,
 .button--secondary:focus {
-  background: #55e6ff;
+  background-color: #00c4e6;
 }
 .button--search {
   background: var(--color-accent);
   color: white;
   font-size: 1.5rem;
   padding-inline: 3rem;
+  transition: background-color 0.15s;
   /* padding-block: 2.5rem; */
 }
 .button--search-icon {
@@ -233,7 +237,7 @@ a {
 .button--transparent {
   background: transparent;
   color: var(--color-headings);
-  border: 2px solid var(--color-headings);
+  border: 3px solid var(--color-headings);
   font-size: 1.8rem;
   font-weight: 500;
   width: 100%;
@@ -257,5 +261,47 @@ a {
   }
   .button--search {
     padding-inline: 4rem;
+  }
+}
+
+/* inputs */
+
+.input {
+  border-radius: 50px;
+  border: 0;
+  outline: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+  height: 7rem;
+  padding: 4.5rem;
+  width: 100%;
+  box-shadow: 0px 0px 50px 4px rgba(148, 148, 148, 0.25);
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  box-shadow: 0px 0px 50px 4px rgba(148, 148, 148, 0.25);
+  border-radius: 50px;
+  display: flex;
+}
+
+.input-group .input {
+  box-shadow: none;
+  flex-grow: 1;
+}
+
+.input-group .button {
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    width: 70rem;
+  }
+  .input-group {
+    width: 70rem;
   }
 }
