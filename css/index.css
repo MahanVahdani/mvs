@@ -8,6 +8,14 @@
   --color-body: #918ca4;
 }
 
+/* universal */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 
 html {
@@ -167,4 +175,87 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* button */
+
+a {
+  cursor: auto;
+}
+
+.button {
+  margin: 1rem 0;
+  border-radius: 50px;
+  border: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  padding: 2.5rem 3rem;
+  display: inline-block;
+}
+.button--accent {
+  background: var(--color-accent);
+  color: white;
+  font-size: 1.8rem;
+  padding-inline: 14rem;
+  /* padding-block: 2.2rem; */
+}
+.button--accent:hover,
+.button--accent:focus,
+.button--search:hover,
+.button--search:focus {
+  background: #ff592f;
+}
+.button--secondary {
+  background: var(--color-secondary);
+  color: white;
+  font-size: 1.8rem;
+  padding-inline: 9rem;
+  /* padding-block: 2.5rem; */
+}
+.button--secondary:hover,
+.button--secondary:focus {
+  background: #55e6ff;
+}
+.button--search {
+  background: var(--color-accent);
+  color: white;
+  font-size: 1.5rem;
+  padding-inline: 3rem;
+  /* padding-block: 2.5rem; */
+}
+.button--search-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.button--transparent {
+  background: transparent;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.15s;
+}
+.button--transparent:hover,
+.button--transparent:focus {
+  background-color: var(--color-headings);
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
+  .button--accent {
+    padding-inline: 3.5rem;
+  }
+  .button--secondary {
+    padding-inline: 5.5rem;
+  }
+  .button--search {
+    padding-inline: 4rem;
+  }
 }
