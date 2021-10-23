@@ -32,7 +32,10 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-headings);
   margin-bottom: 1rem;
 }
@@ -166,6 +169,9 @@ a {
 
 .icon--primary {
   fill: var(--color-primary);
+}
+.icon--secondary {
+  fill: var(--color-secondary);
 }
 
 .icon-container {
@@ -395,6 +401,27 @@ a {
     font-size: 1.6rem;
   }
   .plan__description {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
+}
+
+/* media object */
+
+.media {
+  display: flex;
+}
+.media .media--heading {
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+.media__body {
+  margin: 0 2rem;
+}
+.media__image {
+  margin-top: 1rem;
+}
+.media .icon {
+  width: 6rem;
+  height: 6rem;
 }
