@@ -549,3 +549,46 @@ a {
     margin-left: 6rem;
   }
 }
+
+/* callouts */
+
+.callout .grid {
+  justify-items: center;
+}
+.callout {
+  padding: 6rem 4rem;
+  border-radius: 10px;
+}
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.callout__content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.callout__heading {
+  text-transform: capitalize;
+  color: #fff;
+  margin-top: 0;
+  white-space: nowrap;
+  font-size: 3rem;
+}
+
+.callout--button {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+  .callout--button {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+}
