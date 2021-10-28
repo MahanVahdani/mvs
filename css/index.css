@@ -39,6 +39,7 @@ h5,
 h6 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -627,7 +628,6 @@ a {
 .block {
   --block-padding: 6rem;
   padding: var(--block-padding) 2rem;
-  border: var(--border-default);
 }
 .block__heading {
   margin-top: 0;
@@ -653,7 +653,7 @@ a {
 .block__header {
   text-align: center;
 }
-.block__content {
+.container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -716,5 +716,32 @@ a {
   .nav__item {
     border: 0;
     font-size: 1.6rem;
+  }
+}
+
+/* hero */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem 0;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
