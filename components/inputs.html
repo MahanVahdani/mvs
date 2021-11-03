@@ -1,12 +1,15 @@
-<!-- simple inputs -->
+<!-- simple input -->
 
-<input class="input" type="text" placeholder="Enter domain name here..." />
+<input type="text" class="input" placeholder="Enter domain name here..." />
 
-<!-- inputs witch button -->
+<!-- input with search button -->
+
 <div class="input-group">
-  <input class="input" type="text" placeholder="Enter domain name here..." />
-  <button type="submit" class="button button--search">
-    <i class="fas fa-search button--search-icon"></i>
-    search
+  <input type="text" class="input" placeholder="Enter domain name here... " />
+  <button class="btn btn--accent">
+    <svg class="icon icon--white">
+      <use xlink:href="/images/sprite.svg#search"></use>
+    </svg>
+    Search
   </button>
 </div>
