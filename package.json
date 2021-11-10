@@ -1,0 +1,23 @@
+{
+  "name": "s3",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahanVahdani/S3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MahanVahdani/S3/issues"
+  },
+  "homepage": "https://github.com/MahanVahdani/S3#readme",
+  "devDependencies": {
+    "netlify-cli": "^6.14.18",
+    "parcel": "^2.0.1"
+  }
+}
